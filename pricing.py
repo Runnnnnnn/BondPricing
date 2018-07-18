@@ -29,8 +29,7 @@ for i in range(m):
     for j in range(N-1):
         r[i,j+1] = r[i,j] + k*(r_mean - r[i,j])*t + sigma * dw[i,j]
 
-#Using Euler's method of integral estimation, the discount factor can be rewrite
-#as following:
+#Using Euler's method of integral estimation, the discount factor can be transformed as following:
 discount_factor = np.exp(-r[:,1:N].sum(axis=1) * t)
 
 bond_price = np.mean(discount_factor*1000)
