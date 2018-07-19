@@ -36,3 +36,16 @@ discount_factor = np.exp(-r[:,1:N+1].sum(axis=1) * t)
 FV = 1000 
 bond_price = np.mean(discount_factor*FV)
 print(bond_price)
+
+####################################################################################
+#To avoid column miscount, apply drop function to drop the "first" column -> Column 0
+
+#drop the column with initial interest rate assumption 0.05
+r_new = np.delete(r,0,axis=1)
+discount_factor_2 = np.exp(-r_new.sum(axis=1) * t)
+
+bond_price_2 = np.mean(discount_factor_2*1000)
+print(bond_price_2)
+
+
+
