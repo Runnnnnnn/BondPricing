@@ -1,6 +1,6 @@
 Price a Zero-Coupon Bond
 
-Under risk-neutral measurment, the price of any security will be the expected present value of the future payoff under that measure
+Assume risk-neutral measure exists, the price of any security will be the expected present value of the future payoff under that measure
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P_{t}&space;=&space;E^{*}_{t}(e^{-\int_{t}^{T}r_sds}V_t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P_{t}&space;=&space;E^{*}_{t}(e^{-\int_{t}^{T}r_sds}V_t)" title="P_{t} = E^{*}_{t}(e^{-\int_{t}^{T}r_sds}V_t)" /></a>
 
