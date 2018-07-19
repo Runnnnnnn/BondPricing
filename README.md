@@ -1,4 +1,4 @@
-Pricing a Pure Discount Bond
+Price a Zero-Coupon Bon
 
 Under risk-neutral measurment, the price of any security will be the expected present value of the future payoff under that measure
 
