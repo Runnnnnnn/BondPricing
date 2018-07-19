@@ -11,7 +11,7 @@ T=0.5
 t = T/float(N)
 
 #initial interest rate is 5%
-r = np.zeros([m,N])
+r = np.zeros([m,N+1])
 r[:,0] = 0.05
 
 #assumption for vasicek model
@@ -26,11 +26,11 @@ dw = np.sqrt(t) * np.random.normal(0,1,[m,N])
 #Vasicek model
 #simulate interest rate
 for i in range(m):
-    for j in range(N-1):
+    for j in range(N):
         r[i,j+1] = r[i,j] + k*(r_mean - r[i,j])*t + sigma * dw[i,j]
 
 #Using Euler's method of integral estimation, the discount factor can be transformed as following:
-discount_factor = np.exp(-r[:,1:N].sum(axis=1) * t)
+discount_factor = np.exp(-r[:,1:N+1].sum(axis=1) * t)
 
 #bond face value
 FV = 1000 
