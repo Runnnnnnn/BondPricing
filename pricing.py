@@ -32,5 +32,7 @@ for i in range(m):
 #Using Euler's method of integral estimation, the discount factor can be transformed as following:
 discount_factor = np.exp(-r[:,1:N].sum(axis=1) * t)
 
-bond_price = np.mean(discount_factor*1000)
+#bond face value
+FV = 1000 
+bond_price = np.mean(discount_factor*FV)
 print(bond_price)
