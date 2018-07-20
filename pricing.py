@@ -44,8 +44,9 @@ print(bond_price)
 r_new = np.delete(r,0,axis=1)
 discount_factor_2 = np.exp(-r_new.sum(axis=1) * t)
 
-bond_price_2 = np.mean(discount_factor_2*1000)
+bond_price_2 = np.mean(discount_factor_2*FV)
 print(bond_price_2)
-
+#As the methodology does not change
+#bond_price = bond_price_2 
 
 
