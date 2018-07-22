@@ -1,4 +1,4 @@
-Price a Zero-Coupon Bond
+Price Bond (Pure and Coupon-Paying)
 
 Assume risk-neutral measure exists, the price of any security will be the expected present value of the future payoff under that measure
 
