@@ -1,4 +1,6 @@
 #coupon paying bond
+#the bond will pay semiannual coupon $30 and mature in 4 years
+
 import numpy as np
 np.random.seed(15)
 #4 years till maturity
